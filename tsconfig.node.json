@@ -12,6 +12,7 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "isolatedModules": true,
 
     /* Linting */
     "strict": true,
@@ -19,7 +20,9 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true
   },
   "include": ["vite.config.ts"]
 }
