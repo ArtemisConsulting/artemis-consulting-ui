@@ -14,13 +14,13 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-card__image {
+.portfolio-card-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.portfolio-card__content {
+.portfolio-card-content {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   flex: 1;
 }
 
-.portfolio-card__company-type {
+.portfolio-card-company-type {
   padding: 0.25rem 0.75rem;
   background-color: #dbeafe;
   color: #1e40af;
@@ -38,26 +38,26 @@
   width: fit-content;
 }
 
-.portfolio-card__title {
+.portfolio-card-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #111827;
 }
 
-.portfolio-card__company {
+.portfolio-card-company {
   color: #6b7280;
   font-size: 1rem;
   font-weight: 500;
 }
 
-.portfolio-card__description {
+.portfolio-card-description {
   color: #4b5563;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
-.portfolio-card__metrics {
+.portfolio-card-metrics {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -66,7 +66,7 @@
   border-radius: 8px;
 }
 
-.portfolio-card__metric {
+.portfolio-card-metric {
   flex: 1;
   display: flex;
   align-items: center;
@@ -74,22 +74,22 @@
   gap: 0.5rem;
 }
 
-.portfolio-card__metric-icon {
+.portfolio-card-metric-icon {
   color: #6b7280;
 }
 
-.portfolio-card__metric-text {
+.portfolio-card-metric-text {
   font-size: 0.875rem;
   color: #374151;
 }
 
-.portfolio-card__tags {
+.portfolio-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.portfolio-card__tag {
+.portfolio-card-tag {
   padding: 0.25rem 0.75rem;
   background-color: #e5e7eb;
   color: #374151;
@@ -98,12 +98,12 @@
   font-weight: 500;
 }
 
-.portfolio-card__key-results {
+.portfolio-card-key-results {
   margin: 0;
   padding-left: 1.25rem;
 }
 
-.portfolio-card__key-result {
+.portfolio-card-key-result {
   color: #374151;
   margin-bottom: 0.5rem;
   line-height: 1.4;

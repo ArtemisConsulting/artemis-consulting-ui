@@ -1,4 +1,7 @@
 /** @module index */
 
-export { default as PortfolioCard } from "./PortfolioCard/PortfolioCard";
-export * from "./PortfolioCard/types";
+import designConstants from "./data/designConstants";
+
+import PortfolioCard from "./PortfolioCard/PortfolioCard";
+
+export { designConstants, PortfolioCard };

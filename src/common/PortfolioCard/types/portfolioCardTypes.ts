@@ -2,7 +2,7 @@
 
 export type CompanyType =
   | "Food & Beverage"
-  | "Finance/Banking"
+  | "Finance & Banking"
   | "Healthcare"
   | "Technology"
   | "Retail"
@@ -17,13 +17,13 @@ export type ProjectType =
   | "Process Automation"
   | "Strategy Consulting";
 
-export interface ProjectMetrics {
+export type ProjectMetrics = {
   duration: string;
   teamSize: number;
   impact: string;
-}
+};
 
-export interface PortfolioCardProps {
+export type PortfolioCardProps = {
   image: string;
   companyType: CompanyType;
   projectName: string;
@@ -32,4 +32,4 @@ export interface PortfolioCardProps {
   metrics: ProjectMetrics;
   projectTypes: ProjectType[];
   keyResults: string[];
-}
+};
