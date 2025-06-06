@@ -3,6 +3,8 @@
 import { FaCalendarAlt, FaUsers, FaChartLine } from "react-icons/fa";
 import type { PortfolioCardProps } from "./types/portfolioCardTypes";
 
+import Tag from "../Tag/Tag";
+
 import "./PortfolioCard.css";
 
 const PortfolioCard = ({
@@ -19,7 +21,9 @@ const PortfolioCard = ({
     <div className="portfolio-card">
       <img src={image} alt={projectName} className="portfolio-card-image" />
       <div className="portfolio-card-content">
-        <div className="portfolio-card-company-type">{companyType}</div>
+        <Tag variant="filled" color="blue">
+          {companyType}
+        </Tag>
         <div className="portfolio-card-title">{projectName}</div>
         <div className="portfolio-card-company">{companyName}</div>
         <div className="portfolio-card-description">{description}</div>
@@ -46,9 +50,9 @@ const PortfolioCard = ({
         <div className="portfolio-card-tags">
           {projectTypes.map(
             (type): React.JSX.Element => (
-              <span key={type} className="portfolio-card-tag">
+              <Tag key={type} variant="outlined" color="red">
                 {type}
-              </span>
+              </Tag>
             )
           )}
         </div>
