@@ -22,9 +22,9 @@ const SAMPLE_PROJECTS: PortfolioCardProps[] = [
     description:
       "Led a comprehensive digital transformation project to modernize legacy systems and improve customer experience across all digital channels.",
     metrics: {
-      duration: "18 months",
-      teamSize: 12,
-      impact: "40% cost reduction"
+      duration: "3 months",
+      teamSize: 7,
+      impact: "Data-backed supply Forecasting"
     },
     projectTypes: [
       DIGITAL_TRANSFORMATION_PROJECT_TYPE,

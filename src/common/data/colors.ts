@@ -89,7 +89,7 @@ export const HEX_COLOR_RED_MAIN = "#c15c49";
 export const HEX_COLOR_RED_EXTRA_DARK = "#944738";
 export const HEX_COLOR_RED_DARK = "#ac5241";
 export const HEX_COLOR_RED_LIGHT = "#e0aea4";
-export const HEX_COLOR_RED_EXTRA_LIGHT = "#f9efed";
+export const HEX_COLOR_RED_EXTRA_LIGHT = "#fee2e2";
 
 export const HEX_COLOR_YELLOW_MAIN = "#e2a814";
 export const HEX_COLOR_YELLOW_EXTRA_DARK = "#af810b";
@@ -152,3 +152,15 @@ export const COLOR_TO_HEX_MAP: Record<Color, string> = {
   [COLOR_SKY_BLUE_LIGHT]: HEX_COLOR_SKY_BLUE_LIGHT,
   [COLOR_SKY_BLUE_EXTRA_LIGHT]: HEX_COLOR_SKY_BLUE_EXTRA_LIGHT
 };
+
+// variants
+export const VARIANT_FILLED = "filled" as const;
+export const VARIANT_OUTLINED = "outlined" as const;
+export const VARIANTS = [VARIANT_FILLED, VARIANT_OUTLINED] as const;
+export type Variant = (typeof VARIANTS)[number];
+
+// sizes
+export const SIZE_SMALL = "small" as const;
+export const SIZE_MEDIUM = "medium" as const;
+export const SIZES = [SIZE_SMALL, SIZE_MEDIUM] as const;
+export type Size = (typeof SIZES)[number];
