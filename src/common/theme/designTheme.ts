@@ -90,23 +90,6 @@ declare module "@mui/material/styles" {
   }
 }
 
-declare module "@mui/material/Chip" {
-  interface ChipPropsColorOverrides {
-    red: true;
-    blue: true;
-    green: true;
-    gray: true;
-    yellow: true;
-    primary: false;
-    secondary: false;
-    default: false;
-    info: false;
-    success: false;
-    warning: false;
-    error: false;
-  }
-}
-
 // Create and export the theme
 const themeOptions: ThemeOptions = {
   palette: {
@@ -126,13 +109,15 @@ const themeOptions: ThemeOptions = {
         root: {
           borderRadius: "100px",
           fontSize: "0.875rem",
-          fontWeight: 500,
-          width: "fit-content"
+          fontWeight: 600,
+          width: "fit-content",
+          border: "1px solid"
         },
         filled: {
           "&.MuiChip-colorRed": {
             backgroundColor: accents.red.extraLight,
-            color: accents.red.main
+            color: accents.red.extraDark,
+            borderColor: accents.red.extraDark
           },
           "&.MuiChip-colorBlue": {
             backgroundColor: accents.blue.extraLight,
