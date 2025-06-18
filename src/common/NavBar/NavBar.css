@@ -1,0 +1,169 @@
+.nav-bar {
+  background-color: var(--neutrals-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 80px;
+}
+
+.nav-bar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.nav-bar-logo-image {
+  height: 64px;
+  width: 64px;
+  object-fit: contain;
+}
+
+.nav-bar-logo-text {
+  font-size: 1.75rem;
+  font-weight: 450;
+  color: #272727;
+  letter-spacing: -0.5px;
+  margin-left: 1rem;
+}
+
+.nav-bar-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-bar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+.nav-bar-link {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--neutrals-gray-main);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-bar-link:hover {
+  color: var(--accents-yellow-main);
+}
+
+.nav-bar-link-active {
+  color: var(--accents-yellow-main);
+  font-weight: 600;
+}
+
+.nav-bar-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accents-yellow-main);
+  border-radius: 2px;
+}
+
+.nav-bar-linkedin {
+  color: var(--neutrals-gray-main);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-linkedin:hover {
+  color: var(--accents-yellow-main);
+}
+
+.nav-bar-mobile-button {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav-bar-mobile-button {
+    display: none;
+  }
+}
+
+.nav-bar-toggle {
+  color: var(--neutrals-gray-main);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.nav-bar-toggle:hover {
+  color: var(--accents-yellow-main);
+}
+
+.nav-bar-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .nav-bar-mobile {
+    display: none;
+  }
+}
+
+.nav-bar-mobile-menu {
+  padding: 1rem;
+  background-color: var(--neutrals-white);
+  border-top: 1px solid var(--neutrals-gray-extraLight);
+}
+
+.nav-bar-mobile-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--neutrals-gray-main);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+}
+
+.nav-bar-mobile-link:hover {
+  color: var(--accents-yellow-main);
+  background-color: var(--accents-yellow-extraLight);
+}
+
+.nav-bar-mobile-linkedin {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: var(--neutrals-gray-main);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+}
+
+.nav-bar-mobile-linkedin:hover {
+  color: var(--accents-yellow-main);
+  background-color: var(--accents-yellow-extraLight);
+} 
